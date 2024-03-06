@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Đối tác kinh doanh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/mystyle.css">
+    <script src="/assets/js/myScript.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hedvig Letters Sans">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <!-- header nav -->
+    <header class="bg-white fixed-top" id="header">
+        <div class="bg-light d-none d-md-block">
+            <div class="container header-top text-secondary p-2 d-flex flex-column flex-md-row justify-content-between text-center align-items-center">
+                <div>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>  hoanganhbio.hotro@ gmail.com </span>
+                    <span>  |  </span>
+                    <span><i class="fas fa-phone"></i></span>
+                    <span> 0948142268</span>
+                </div>
+
+                <div class="header-login mt-2 mt-md-0">
+                    <span>
+                    <i class="fas fa-lock"></i>
+                    <a href="login.html">ĐĂNG NHẬP</a>
+                </span>
+                    <span> | </span>
+                    <span> 
+                    <i class="fas fa-phone"></i>
+                    <a href="ho-tro.html">HỖ TRỢ</a>
+                </span>
+                </div>
+
+            </div>
+        </div>
+        <!-- header-2 -->
+        <div class="header-nav">
+            <div class="container header-2  header-nav-sub py-2">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <div class="d-block d-lg-none nav-side-container">
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav">
+                        <span><i class="fas fa-list"></i></span>
+                      </button>
+                        <div class="offcanvas offcanvas-start" id="sideNav">
+                            <div class="offcanvas-header d-flex">
+                                <h1 class="offcanvas-title"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="input-group mb-3 px-3">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-blue" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="offcanvas-body">
+
+                                <div class="menu-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></div>
+                                <!-- menu sản phẩm -->
+                                <div class="menu-item " data-category="Item 2" onclick="showSubcategories('SanPham')">
+                                    <div class="d-flex justify-content-between align-items-center nav-link">
+                                        <a href="#">SẢN PHẨM</a>
+                                        <span class="float-end"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                                <div class="subcategory-list" id="subcategoriesSanPham">
+                                    <div class="back-btn nav-link" onclick="showMainMenu()" style="padding-left: 0;">
+                                        <i class="fas fa-caret-left"></i> &nbsp;SẢN PHẨM
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('nuoc lau san')">
+                                        <a class="nav-link" href="san-pham.html">NƯỚC LAU SÀN</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('nuoc giat xa')">
+                                        <a class="nav-link" href="san-pham.html">NƯỚC GIẶT XẢ </a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('nuoc rua chen')">
+                                        <a class="nav-link" href="san-pham.html">NƯỚC RỬA CHÉN </a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('san pham khac')">
+                                        <a class="nav-link" href="san-pham.html">SẢN PHẨM KHÁC </a>
+                                    </div>
+
+                                </div>
+                                <!-- menu Giới thiệu -->
+                                <div class="menu-item " data-category="Item 2" onclick="showSubcategories('GioiThieu')">
+                                    <div class="d-flex justify-content-between align-items-center nav-link">
+                                        <a href="#">GIỚI THIỆU</a>
+                                        <span class="float-end"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                                <div class="subcategory-list" id="subcategoriesGioiThieu">
+                                    <div class="back-btn nav-link" onclick="showMainMenu()" style="padding-left: 0;">
+                                        <i class="fas fa-caret-left"></i> &nbsp;GIỚI THIỆU
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('gioi thieu 1')">
+                                        <a class="nav-link" href="gioi-thieu-cong-ty.html">GIỚI THIỆU VỀ CÔNG TY</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('gioi thieu 2')">
+                                        <a class="nav-link" href="nha-may-san-xuat.html">NHÀ MÁY SẢN XUẤT</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('gioi thieu 3')">
+                                        <a class="nav-link" href="hoat-dong-thi-truong.html">HOẠT ĐỘNG THỊ TRƯỜNG</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item"><a class="nav-link" href="san-pham-khuyen-mai.html">SẢN PHẨM KHUYẾN MÃI</a></div>
+                                <div class="menu-item">
+                                    <a class="nav-link" href="co-hoi-kinh-doanh.html">ĐỐI TÁC KINH DOANH</a>
+                                </div>
+                                <!-- menu tin tức và sự kiện -->
+                                <div class="menu-item " data-category="Item 3" onclick="showSubcategories('TinTuc')">
+                                    <div class="d-flex justify-content-between align-items-center nav-link">
+                                        <a href="#">TIN TỨC VÀ SỰ KIỆN</a>
+                                        <span class="float-end"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                                <div class="subcategory-list" id="subcategoriesTinTuc">
+                                    <div class="back-btn nav-link" onclick="showMainMenu()" style="padding-left: 0;">
+                                        <i class="fas fa-caret-left"></i> &nbsp;TIN TỨC VÀ SỰ KIỆN
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('doi song')">
+                                        <a class="nav-link" href="tin-tuc.html">ĐỜI SỐNG</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('su kien')">
+                                        <a class="nav-link" href="tin-tuc.html">SỰ KIỆN</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item"><a class="nav-link" href="lien-he.html">LIÊN HỆ</a></div>
+                                <div class="menu-item"><a class="nav-link" href="ho-tro.html">HỖ TRỢ</a></div> <br>
+                                <div class="menu-item">
+                                    <div class="login-register d-flex justify-content-between" style="border-bottom: none; padding: 0;">
+                                        <a href="login.html" class="btn border ">Đăng nhập</a> <br>
+                                        <a href="register.html" class="btn border">Đăng ký</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center ms-2">
+                        <div class="me-2"><img src="/assets/images/logo.png" style="width: 40px;" alt="logo"></div>
+                        <div><a class="brand-name" href="index.html">HOÀNG ANH BIO</a></div>
+                    </div>
+                    <div class="input-group my-3 px-3 w-50 d-none d-lg-flex">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-container">
+                        <div class="shopping-cart">
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartSide">
+                                <i class="fas fa-shopping-bag px-2"></i>
+                                <span class="quantity">0</span>
+                            </a>
+                        </div>
+
+                        <div class="offcanvas offcanvas-end" id="cartSide">
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-title">Giỏ hàng</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="shopping-cart-side">
+                                    <ul class="list-shopping-cart-side">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- desktop header -->
+            <div class="desktop-header d-none d-lg-block">
+
+                <!-- header - 3 -->
+                <div class="bg-success header-3">
+                    <div class="main-nav container p-3 d-none d-lg-flex justify-content-around text-center">
+                        <div><a href="index.html">TRANG CHỦ</a></div>
+                        <div class="dropdown">
+                            <a href="#" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                          GIỚI THIỆU
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gioi-thieu-cong-ty.html">GIỚI THIỆU VỀ CÔNG TY</a></li>
+                                <li><a class="dropdown-item" href="nha-may-san-xuat.html">NHÀ MÁY SẢN XUẤT</a></li>
+                                <li><a class="dropdown-item" href="hoat-dong-thi-truong.html">HOẠT ĐỘNG THỊ TRƯỜNG</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" onclick="openProductList()" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                          SẢN PHẨM
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="san-pham.html">NƯỚC LAU SÀN</a></li>
+                                <li><a class="dropdown-item" href="san-pham.html">NƯỚC GIẶT XẢ</a></li>
+                                <li><a class="dropdown-item" href="san-pham.html">NƯỚC RỬA CHÉN</a></li>
+                                <li><a class="dropdown-item" href="san-pham.html">SẢN PHẨM KHÁC</a></li>
+                            </ul>
+                        </div>
+                        <div><a href="san-pham-khuyen-mai.html">SẢN PHẨM KHUYẾN MÃI</a></div>
+                        <div>
+                            <a href="co-hoi-kinh-doanh.html">
+                          ĐỐI TÁC KINH DOANH
+                        </a>
+                        </div>
+                        <div class="dropdown">
+                            <a href="tin-tuc.html" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                          TIN TỨC & SỰ KIỆN
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tin-tuc.html">BÀI VIẾT CHUYÊN MỤC</a></li>
+                                <li><a class="dropdown-item" href="tin-tuc.html">SỰ KIỆN</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="lien-he.html">LIÊN HỆ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- fake div -->
+    <div class="fake-header"></div>
+
+
+
+    <!-- body -->
+    <div class="oppotunity-container">
+        <div class="img-oppotunity">
+            <img src="/assets/images/hop-tac.jpg" alt="">
+            <div class="centered">TẠI SAO CHỌN HỢP TÁC CÙNG CHÚNG TÔI!</div>
+        </div>
+        <div class="container text-center my-4">
+            <p class="h1-text">Nguồn vốn hợp lý</p>
+            <p>Công ty chúng tôi đã thiết lập các mô hình kinh doanh linh hoạt, phù hợp với đối tác có nhiều vốn, ít vốn hoặc thậm chí không yêu cầu vốn. Điều này tạo ra một môi trường hợp tác kinh doanh linh động và thuận tiện cho đối tác, giúp họ dễ dàng
+                tham gia và phát triển cùng chúng tôi.</p>
+            <p>Không chỉ giới hạn ở khía cạnh về nguồn vốn, chúng tôi cũng chú trọng đến việc tối giản hóa lo lắng về mặt bằng, bến bãi, và nhân sự. Chúng tôi hiểu rằng, để kinh doanh dễ dàng, không chỉ cần sự linh hoạt về nguồn vốn mà còn là sự đơn giản
+                hóa các quy trình, giảm bớt gánh nặng về cơ sở hạ tầng và nhân sự.</p>
+            <p class="h1-text mt-4">Tính linh hoạt mạnh mẽ</p>
+            <p>Linh hoạt về thời gian là một điểm mạnh của chúng tôi, cho phép nhân viên lựa chọn giữa làm việc toàn thời gian hoặc bán thời gian mà vẫn đảm bảo hiệu suất cao trong công việc và kinh doanh. Không chỉ làm thuê cho ai, mà chúng tôi còn cung
+                cấp chính sách chiết khấu và quyền lợi hấp dẫn, tạo động lực mạnh mẽ cho những người kinh doanh sản phẩm công nghệ. Điều này giúp họ xây dựng một mục tiêu chủ động, tận dụng lợi thế và tạo ra nguồn thu nhập thụ động, từ đó đạt được đột
+                phá trong phương diện kinh tế của họ.</p>
+            <p class="h1-text mt-4">Sản phẩm - Công nghệ đạt tiêu chuẩn</p>
+            <p>Sản phẩm công nghệ sinh học của chúng tôi được sản xuất theo tiêu chuẩn hữu cơ (ORGANIC), kết hợp với cơ chế tẩy rửa bóc tách EnZyme, tạo nên một trải nghiệm sạch sẽ và an toàn độc đáo. Sự sạch nhanh được kết hợp với hương thơm ngọt mát dễ
+                chịu của quế, chanh sã, và dầu dừa, mang lại không gian tinh tế và tận hưởng cho mọi gia đình.</p>
+            <p>Nguyên liệu chúng tôi sử dụng nhập khẩu 100% từ Đức, cam kết đồng hành với chất lượng và an toàn. Sản phẩm không chỉ đảm bảo an toàn tuyệt đối cho cả người và động vật mà còn góp phần vào việc tạo ra một môi trường sống không ô nhiễm, xanh
+                sạch và không hóa chất.</p>
+            <p>Với công thức độc đáo, sản phẩm 2 in 1 của chúng tôi được đậm đặc gấp 6 lần, mang đến hương thơm dịu nhẹ và bảo vệ làn da, đặc biệt phù hợp cho trẻ sơ sinh và phụ nữ mang thai. Đồng thời, sản phẩm cũng dịu nhẹ với làn da tay, dễ tan trong
+                nước, tạo ra sự tiện lợi và thoải mái khi sử dụng.</p>
+            <p>Chúng tôi không chỉ tập trung vào khía cạnh vệ sinh cá nhân, mà còn cung cấp thành phần sát khuẩn và diệt khuẩn đặc biệt, giúp bảo vệ gia đình bạn trong thời đại đầy thách thức, như đại dịch bệnh vì COVID-19. Với tất cả những tính năng độc
+                đáo này, sản phẩm của chúng tôi hứa hẹn là sự lựa chọn hoàn hảo để chăm sóc cho mọi thành viên trong gia đình của bạn.</p>
+            <p class="h1-text mt-4">Giá trị cao cả</p>
+            <p>"Chúng tôi tự hào mang đến cho người tiêu dùng không chỉ một dòng sản phẩm công nghệ sạch không hóa chất mà còn là sứ mệnh Bảo vệ môi trường, sức khỏe cộng đồng và gia đình Việt. Qua việc tích hợp công nghệ tiên tiến từ Châu Âu, chúng tôi
+                đã xây dựng nên thương hiệu mà chúng tôi tin tưởng, được gọi là 'NGƯỜI VIỆT DÙNG HÀNG VIỆT'. Đây không chỉ là một dòng sản phẩm, mà là một cam kết đầy tình cảm, nơi công nghệ và truyền thống gặp nhau, tạo nên sự độc đáo hàng đầu tại Việt
+                Nam."
+            </p>
+            <p class="h1-text mt-4"> Đào tạo bài bản</p>
+            <p>Được đặt trong bối cảnh hệ thống đào tạo chuyên sâu, chúng tôi cam kết không chỉ định vị thương hiệu một cách toàn diện mà còn tập trung vào việc phát triển bản thân của học viên. Chúng tôi không chỉ cung cấp kiến thức cơ bản về kỹ năng giao
+                tiếp, kỹ năng bán hàng, và thuyết trình, mà còn tập trung vào việc xây dựng nền tảng vững chắc về kỹ năng quản lý.</p>
+            <p>Chúng tôi hiểu rằng quá trình học không chỉ là việc truyền đạt kiến thức mà còn là việc tạo ra những người lãnh đạo tài năng, có khả năng đối mặt và giải quyết những thách thức đa dạng trong môi trường kinh doanh ngày nay. Với sự đa dạng và
+                sâu rộng trong chương trình đào tạo, chúng tôi tự tin rằng học viên sẽ được trang bị một bộ kỹ năng đa chiều và thiết thực, giúp họ tự tin và thành công trong sự nghiệp của mình.</p>
+            <p class="h1-text mt-4"> Cơ hội hợp tác</p>
+            <p>Là một đơn vị hàng đầu trong lĩnh vực sản xuất và phân phối sản phẩm tẩy rửa hàng tiêu dùng công nghệ sinh học cao cấp tại Việt Nam, chúng tôi tự hào là người tiên phong đón đầu xu thế ngành công nghiệp. Nằm trong danh mục sản phẩm thiết yếu,
+                không thể thiếu trong mỗi gia đình Việt, sản phẩm của chúng tôi không chỉ đáp ứng nhu cầu cơ bản mà còn mang lại trải nghiệm sạch sẽ và an toàn cho người tiêu dùng.</p>
+            <p>Điểm mạnh của dòng sản phẩm tẩy rửa này không chỉ là sự dễ sử dụng, dễ phân phối mà còn nằm ở tính chất sinh học cao cấp, đồng thời là sản phẩm mới đón đầu xu thế ngành công nghiệp. Điều này mở ra cơ hội hợp tác lớn và làm nổi bật thương hiệu
+                "Người Việt dùng hàng Việt" với chất lượng cao.</p>
+            <p>Chúng tôi tin rằng, để đáp ứng nhu cầu kinh doanh và xây dựng sự nghiệp bền vững, cần có sự đầu tư vào nhân tài và quản lý chất lượng. Chính vì vậy, chúng tôi đang mở cửa đón đợt tuyển dụng nhân tài và đề xuất hợp tác kinh doanh với các đối
+                tác có lòng đam mê và cam kết với sự phát triển bền vững, đồng thời cung cấp các cơ hội nghề nghiệp trong các vị trí quản lí chủ chốt trên toàn quốc.</p>
+            <p>Chúng tôi hiện đang mở rộng và phát triển trong bối cảnh khó khăn của thời buổi dịch bệnh, nhằm tạo ra giá trị không chỉ cho doanh nghiệp mà còn cho cộng đồng và người lao động. Hãy cùng chúng tôi xây dựng một tương lai bền vững và phồn thịnh.</p>
+
+            <p class="h1-text mt-4"> Phát triển bản thân</p>
+            <p>Trong một môi trường đầy năng lượng, sáng tạo và giá trị, bạn có cơ hội tối đa hóa khả năng cá nhân và đưa bản thân lên một tầm cao mới. Đây không chỉ là nơi để phát triển kỹ năng cá nhân mà còn là một cơ hội để tìm kiếm sự đổi mới và khám
+                phá tiềm năng chưa được khai phá. Giao lưu và học hỏi từ các lãnh đạo và doanh nhân thành đạt không chỉ là một trải nghiệm, mà là một cơ hội học tập vô song. Trong không khí đa dạng và tràn ngập kiến thức này, bạn sẽ có cơ hội tiếp xúc
+                với những trải nghiệm đa dạng trên mọi lĩnh vực, từ đó làm phong phú thêm hiểu biết và mở rộng tầm nhìn của bản thân.</p>
+            <p class="h1-text mt-4"> Thu nhập mong muốn</p>
+            <p>
+                Dưới thương hiệu "NGƯỜI VIỆT DÙNG HÀNG VIỆT," chúng tôi không chỉ đơn thuần là một doanh nghiệp, mà còn là một hệ thống chắc chắn liên kết giữa công nghệ tiên tiến Châu Âu và quá trình sản xuất tại Việt Nam. Điều này không chỉ giúp chúng tôi giữ vững
+                chất lượng sản phẩm mà còn tạo ra một ưu thế về chi phí, qua đó chúng tôi có thể tối ưu hóa chiết khấu và hoa hồng cho các cấp hệ thống.</p>
+            <p>Việc giảm tối đa chi phí không chỉ mang lại lợi ích cho công ty mà còn tạo ra cơ hội thu nhập tối đa cho các đối tác hệ thống. Chúng tôi cam kết đảm bảo thu nhập ổn định và hấp dẫn cho mọi thành viên tham gia hệ thống, từ đó mở ra nhiều nguồn
+                thu nhập khác nhau.</p>
+            <p>Dòng sản phẩm của chúng tôi không chỉ đa dạng mà còn đáp ứng nhu cầu thiết yếu của đa dạng khách hàng tiềm năng. Với sự tái tiêu dùng lớn và sự tiêu hao không ngừng, chúng tôi tạo ra một nguồn thu nhập thụ động không giới hạn cho mọi thành
+                viên tham gia hệ thống.</p>
+            <p>Chúng tôi tin rằng với lòng ham học hỏi, sự kiên trì, chăm chỉ, và tâm huyết, bất kỳ ai cũng có thể đạt được thu nhập bất ngờ và có khả năng nghỉ hưu sớm trong vòng 2-5 năm. Hệ thống của chúng tôi không chỉ tập trung vào kinh doanh mà còn
+                khuyến khích việc học hỏi và sao chép kỹ năng từ các lãnh đạo và quản lý, tạo điều kiện cho mỗi cá nhân phát triển và thành công trong sự nghiệp của mình.</p>
+            <p class="h1-text mt-4"> Thương hiệu cá nhân - Sở hữu cổ phần doanh nghiệp khởi nghiệp tiềm năng</p>
+            <p>Bạn đã và đang chặng đường hợp tác kinh doanh, xây dựng sự nghiệp cùng một doanh nghiệp startup, đặc biệt là trong lĩnh vực sản xuất dòng sản phẩm công nghệ cấp cao không hóa chất, một xu hướng mới mẻ đang bắt đầu làm nổi bật tại Việt Nam.
+                Qua những bước tiến không ngừng và cam kết không ngừng nghỉ, bạn không chỉ đóng góp vào sự thành công của doanh nghiệp mà còn góp phần vào việc xây dựng thương hiệu cá nhân vững mạnh. Những sản phẩm công nghệ của bạn không chỉ đánh bại
+                thách thức hóa chất mà còn mang lại giá trị lớn về mặt không gian, an toàn, và sự hiện đại cho người tiêu dùng. Điều này không chỉ là một thành tựu kinh doanh mà còn là hành trình đánh dấu sự đổi mới và đóng góp tích cực vào cộng đồng
+                doanh nghiệp Việt Nam.</p>
+            <p>Trên bước đà của sự hiện đại hóa và chuyển đổi số, không chỉ có các tỉ phú và nhà đầu tư thông minh trên thế giới mà ngay cả những người xuất phát từ các lĩnh vực khác nhau cũng đều tìm kiếm và ưu tiên đầu tư vào các doanh nghiệp khởi nghiệp
+                (Startup). Trong thị trường đầy biến động, nguồn động viên lớn nhất chính là sự hứa hẹn của các công ty Startup, đặc biệt là trong lĩnh vực công nghệ sạch, có nền tảng vững, tiềm năng lớn, và triển vọng mạnh mẽ.</p>
+            <p>Công ty HOÀNG ANH BIO, với châm ngôn "người Việt dùng hàng Việt," không chỉ là một doanh nghiệp khởi nghiệp mà còn là nguồn cảm hứng cho sự phát triển bền vững. Sự quan tâm của các chuyên gia kinh tế, doanh nhân, và đối tác trong và ngoài
+                nước đã làm nổi bật vị thế của chúng tôi trong thị trường. Chúng tôi không chỉ đang xây dựng một doanh nghiệp, mà còn đang tạo ra một thương hiệu vững mạnh, đặt nền móng cho sự đổi mới và tiến bộ với công nghệ hàng đầu từ Châu Âu.</p>
+            <p>Chúng tôi tự hào là một đối tác lựa chọn, và chúng tôi mời gọi mọi người, từ những nhà đầu tư tận tâm đến những doanh nghiệp đang tìm kiếm cơ hội hợp tác, hãy chung tay hỗ trợ HOÀNG ANH BIO trong hành trình xây dựng sự đột phá và định hình
+                lại cảnh đồng ngành công nghiệp. Cùng nhau, chúng ta có thể làm nổi bật nguồn lực và tiềm năng của doanh nghiệp Việt Nam, mang lại giá trị không chỉ cho người tiêu dùng trong nước mà còn cho thế giới.
+            </p>
+
+        </div>
+        <div class="text-center mb-4"><a class="btn bg-success rounded p-3 text-white" href="login.html"><b>BẠN ĐÃ SẴN SÀNG CHƯA!</b></a></div>
+
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer bg-light pt-4">
+        <div class="container row mx-auto ">
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>THÔNG TIN CÔNG TY</b><br>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-center my-2">
+                        <div class="me-2"><img src="/assets/images/logo.png" style="width: 40px;" alt="logo"></div>
+                        <div><a class="brand-name-footer" href="index.html">HOÀNG ANH BIO</a></div>
+                    </div>
+                    Địa chỉ: 163/1C Đường số 11, Lê Hồng phong, Nha Trang, Vietnam <br> Hotline: 0972214020 <br> Email: hoanganhbio@gmail.com
+                    <div class="footer-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i> </a>
+                        <a href="#"><i class="fab fa-instagram"></i> </a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>THÔNG TIN CHUNG</b> <br>
+                    <hr>
+                    <a href="#">Giới thiệu</a> <br>
+                    <a href="#">Liên hệ</a> <br>
+                    <a href="#">Tuyển dụng</a> <br>
+                    <a href="#">Điều khoản sử dụng</a> <br>
+                    <a href="#">Chính sách bảo mật</a> <br>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>CHÍNH SÁCH BÁN HÀNG</b> <br>
+                    <hr>
+                    <a href="#"> Chính sách giao nhận</a> <br>
+                    <a href="#"> Phương thức thanh toán</a> <br>
+                    <a href="#"> Chính sách đổi trả hàng</a> <br>
+                    <a href="#"> Quy trình xử lý khiếu nại</a> <br>
+                    <a href="#"> Chính sách bảo hành</a> <br>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>FANPAGE FACEBOOK</b> <br>
+                    <hr>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhangtieudungcongnghesinhhocbio&tabs=timeline&height=250px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300px"
+                        height="250px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="width:100%"></iframe>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center text-secondary">
+            Copyright © 2020 hoanganhbio.com All Rights Reserved. Powered by Multimediaviet .
+        </div>
+    </div>
+
+</body>
+
+</html>

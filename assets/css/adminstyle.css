@@ -1,0 +1,704 @@
+/* .navbar-nav .dropdown-toggle::after{
+    display: none;
+}
+.navbar-nav .notification{
+    position:absolute;
+    top:2px;
+    right:3px;
+    display:block;
+    font-size:10px;
+    border:0;
+    background-color:#d42009;
+    min-width:15px;
+    text-align:center;
+    padding:1px 5px;
+    height:15px;
+    border-radius:2px;
+    line-height:14px;
+    font-weight: bold;
+} */
+
+.main-user-info {
+    padding: 10px;
+    background-image: linear-gradient( 359.8deg, rgba(252, 255, 222, 1) 2.2%, rgba(182, 241, 171, 1) 99.3%);
+    font-size: 15px;
+}
+
+.main-user-img {
+    max-width: 100px;
+    min-width: 80px;
+}
+
+.main-user-img img {
+    display: block;
+    margin: 0 auto !important;
+}
+
+.user-info div {
+    padding-left: 20px;
+}
+
+.bg-gd-green {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(176, 229, 208, 1) 42%, rgba(92, 202, 238, 0.41) 93.6%);
+}
+
+.bg-gd-orange {
+    background-image: linear-gradient( 111.4deg, rgba(238, 113, 113, 1) 1%, rgba(246, 215, 148, 1) 58%);
+}
+
+.bg-gd-blue {
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%, rgba(83, 138, 214, 1) 0%, rgba(134, 231, 214, 1) 90%);
+}
+
+.bg-gd-red {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(237, 3, 32, 0.87) 20.8%, rgba(242, 121, 1, 0.84) 74.4%);
+}
+
+.data-container .data-box {
+    text-align: center;
+    color: rgb(91, 90, 90);
+    padding: 5px;
+    font-size: 15px;
+}
+
+.data-container .data-box .content {
+    height: 80px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.data-container .data-box .number {
+    font-size: 18px;
+}
+
+.table-user-info table td:first-child {
+    font-weight: bold !important;
+    max-width: 200px;
+    text-wrap: wrap;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+/* -----------------------------------------------admin-thong-tin------------------------------ */
+
+
+/* .register-general-info .col-lg-6 {
+    padding: 10px;
+} */
+
+.control-label {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#infoForm {
+    display: none;
+}
+
+.btn-secondary {
+    color: black;
+    background-color: #d8dde2;
+    border-color: #d8dde2;
+}
+
+
+/* -----------------------------------admin-danh-muc-san-pham---------------------------------- */
+
+.admin-banner-product img {
+    width: 100%;
+    height: 50vh !important;
+    object-fit: cover;
+}
+
+.h1-text {
+    font-size: 26px;
+    font-weight: bolder;
+    color: green;
+}
+
+.product-title {
+    color: black;
+    font-weight: bold;
+}
+
+.product-price {
+    color: rgb(190, 8, 8);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.admin-product-container .card .btn {
+    border-radius: 0;
+}
+
+.admin-product-container .card img {
+    max-height: 250px !important;
+    object-fit: cover;
+}
+
+.product-price-ck {
+    background-color: rgba(127, 182, 43, 0.3);
+    padding: 20px 0 15px 0;
+    margin-top: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.admin-product-container .card-body {
+    padding: 0;
+    padding-top: 15px;
+    color: green;
+}
+
+.admin-product-container .card .badge-ck {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    background-color: green;
+    right: 0px;
+    top: 1px;
+    font-size: 11px;
+}
+
+
+/* -------------------------------------------Chi tiết sản phẩm--------------------------- */
+
+.bg-green {
+    background-color: #38b349;
+}
+
+.btn-mua-ngay {
+    background-color: #1b8b00;
+    background-image: linear-gradient(314deg, #1b8b00 0%, #a2d240 74%);
+}
+
+.border-circle {
+    border: 2px solid rgb(178, 176, 176);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 17px;
+    color: gray;
+    margin-right: 15px;
+}
+
+.border-circle:hover {
+    background-color: green;
+    color: white;
+}
+
+.figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+figure.zoom img:hover {
+    opacity: 0;
+}
+
+figure.zoom img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+}
+
+.product-detail-content {
+    position: relative;
+}
+
+.product-detail-content .badge-ck {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: green;
+    right: 0px;
+    top: 1px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.product-detail-content .title {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.product-detail-content .price {
+    font-size: 18px;
+    color: brown;
+    font-weight: bold;
+}
+
+.product-detail-content .describe li {
+    margin-bottom: 5px;
+}
+
+.product-detail-content .row {
+    margin-right: 0;
+}
+
+.product-detail-content .btn {
+    border-radius: 0;
+}
+
+.quantity-input {
+    display: flex;
+    max-width: 150px;
+}
+
+.input-group-prepend,
+.input-group-append {
+    cursor: pointer;
+}
+
+.input-group-text,
+.form-control {
+    border-radius: 0;
+}
+
+.quantity-input input {
+    text-align: center;
+}
+
+
+/*--------------------------------------------- admin-product-cart---------------------------- */
+
+.admin-product-cart-container img {
+    width: 100px;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.admin-product-cart-container .cart-header {
+    font-weight: bold !important;
+}
+
+.admin-product-cart-item {
+    border-top: 1px solid rgb(206, 203, 203);
+    padding: 20px 0;
+}
+
+.btn-shopping-cart .btn {
+    border-radius: 0;
+}
+
+.filter-container input,
+select {
+    height: 40px;
+    border: 1px solid rgb(234, 231, 231) !important;
+}
+
+
+/* ---------------------------Danh sách thành viên-------------------------------- */
+
+.table-member-info .dropdown-toggle::after {
+    display: none;
+}
+
+.table-member-info .dropdown-toggle {
+    color: gray;
+    margin: 0 30px;
+}
+
+
+/* -------------------------- rút tiền, chuyển tiền-------------------- */
+
+.admin-account-info .col-6 {
+    margin-top: 10px;
+}
+
+.admin-withdraw-container .col-md-2 {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.admin-transfer-container .col-8 {
+    padding-top: 15px;
+}
+
+.admin-transfer-container .col-4 {
+    padding-top: 15px;
+}
+
+.income-filter .col-12 {
+    padding-bottom: 10px;
+}
+
+
+/* -------------------------- Tổng quan về công ty----------------------- */
+
+.company-introduction {
+    font-size: 18px;
+}
+
+.hr-title hr {
+    width: 130px;
+    height: 4px;
+    background-color: rgb(188, 42, 2);
+    color: rgb(188, 42, 2);
+    margin: 20px auto;
+}
+
+.company-mission img {
+    width: 400px
+}
+
+.company-vision {
+    border: 2px solid green;
+    border-radius: 40px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.company-vision-btn {
+    text-align: center !important;
+    margin-bottom: -60px;
+}
+
+.img-motto {
+    width: 500px;
+}
+
+.img-nha-may {
+    width: 75%;
+}
+
+
+/* ----------------------------------------phần thưởng----------------------------- */
+
+.bonus-container img {
+    width: 100%;
+}
+
+.bonus-item-container {
+    height: 150px;
+    background-color: rgba(91, 163, 18, 0.2);
+    margin: 30px 50px;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.bonus-learn-more a {
+    text-decoration: underline;
+}
+
+
+/* -------------------------------------Sự kiện---------------------------------- */
+
+.event-container img {
+    width: 100%;
+}
+
+.event-container .row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.admin-event-box {
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.admin-event-box .card {
+    margin-top: 15px;
+}
+
+
+/*---------------------------- Báo cáo---------------------------------------------- */
+
+.dash-widget-icon {
+    background-color: rgba(244, 59, 72, 0.2);
+    border-radius: 100%;
+    color: #f43b48;
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 10px;
+    text-align: center;
+    width: 60px;
+}
+
+.dash-widget-info {
+    text-align: right;
+}
+
+.dash-widget-info>h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.dash-widget-info>span {
+    font-size: 16px;
+}
+
+.general-report-container .card {
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.general-report-container .card-title {
+    color: #1f1f1f;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.general-report-container .card-header {
+    background-color: #fff;
+}
+
+.general-report-container .card-footer {
+    background-color: #fff;
+}
+
+.dash-statistics .stats-info {
+    margin-bottom: 5px;
+}
+
+.dash-statistics .stats-info:last-child {
+    margin-bottom: 0;
+}
+
+.dash-statistics .progress {
+    height: 4px;
+}
+
+.dash-statistics .stats-list {
+    height: auto;
+}
+
+.stats-info {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.stats-info h6 {
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.stats-info h4 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.stats-info h4 span {
+    color: #727272;
+    font-size: 12px;
+}
+
+.stats-info:last-child .progress {
+    margin-bottom: 0;
+}
+
+.stats-info p {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.stats-list {
+    height: 331px;
+    overflow-y: auto;
+}
+
+.dash-statistics .stats-list {
+    height: auto;
+}
+
+.card-table .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.card-table .card-body {
+    padding: 0;
+}
+
+.card-table .card-footer {
+    background-color: #fff;
+    text-align: center;
+}
+
+.card-table .card-footer a {
+    color: #333;
+}
+
+.table-responsive {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.page-header {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .user-info div {
+        margin: 0;
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    .main-user-img img {
+        width: 90px;
+    }
+    .page-title,
+    .dash-widget-info>h3,
+    .account-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .product-title {
+        font-size: 15px;
+    }
+    .product-price {
+        font-size: 16px;
+    }
+    .card-body {
+        padding: 10px !important;
+    }
+    .page-header {
+        margin-top: 40px;
+    }
+    .product-price-ck {
+        margin: 5px -10px -10px -10px;
+    }
+    .admin-product-container .card-body {
+        font-size: 13px;
+    }
+    .admin-product-container img {
+        max-height: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .table-user-info table td:first-child {
+        max-width: 80px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .product-detail-content .badge-ck {
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        border-radius: 10%;
+        text-align: center;
+        line-height: 25px;
+        color: white;
+        background-color: green;
+        right: 0px;
+        top: -20px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1200px) {}

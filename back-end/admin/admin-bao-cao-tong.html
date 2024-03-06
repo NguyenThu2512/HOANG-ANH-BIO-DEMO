@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Admin-thông tin</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/feathericon.min.css">
+    <link rel="stylehseet" href="https://cdn.oesmith.co.uk/morris-0.5.1.css">
+    <link rel="stylesheet" href="/assets/plugins/morris/morris.css">
+    <link rel="stylesheet" href="/assets/css/style.css"> </head>
+<link rel="stylesheet" href="/assets/css/adminstyle.css">
+<link rel="stylesheet" href="/assets/css/line-awesome.min.css">
+<script src="/assets/js/adminScript.js"></script>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="header-left">
+                <a href="admin-tong-quan.html" class="logo"> <img src="/assets/images/logo.png" width="40" height="60" alt="logo"> <span class="logoclass">HOÀNG ANH BIO</span> </a>
+                <a href="admin-tong-quan.html" class="logo logo-small"> <img src="/assets/images/logo.png" alt="Logo"> <span class="logoclass">HOÀNG ANH BIO</span></a>
+            </div>
+            <a href="javascript:void(0);" id="toggle_btn"> <i class="fe fe-text-align-left"></i> </a>
+            <a class="mobile_btn" id="mobile_btn"> <i class="fas fa-bars"></i> </a>
+            <ul class="nav user-menu">
+                <li class="nav-item dropdown noti-dropdown d-none d-md-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <i class="fe fe-bell"></i> <span class="badge badge-pill">3</span> </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header"> <span class="notification-title">Thông báo</span> <a href="javascript:void(0)" class="clear-noti"> Clear All </a> </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer"> <a href="#">View all Notifications</a> </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" style="padding: 0;" data-toggle="dropdown"> <span class="user-img"><img class="rounded-circle" src="/assets/images/user.jpg" width="45px" alt=""></span> </a>
+                    <div class="dropdown-menu">
+                        <div class="user-header">
+                            <div class="avatar avatar-sm"> <img src="/assets/images/user.jpg" alt="User Image" class="avatar-img rounded-circle"> </div>
+                            <div class="user-text">
+                                <h6>Thu Huyền</h6>
+                                <p class="text-muted mb-0">Giám đốc kinh doanh</p>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="admin-tong-quan.html"><i class="fas fa-tachometer-alt mr-2"></i> Tổng quan</a>
+                        <a href="#" class="dropdown-item dropdown-toggle d-block d-md-none" data-toggle="dropdown"> <i class="fas fa-bell mr-2"></i> Thông báo </a>
+                        <div class="dropdown-menu notifications">
+                            <div class="topnav-dropdown-header"> <span class="notification-title">Thông báo</span> <a href="javascript:void(0)" class="clear-noti"> Clear All </a> </div>
+                            <div class="noti-content">
+                                <ul class="notification-list">
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="topnav-dropdown-footer"> <a href="#">View all Notifications</a> </div>
+                        </div>
+                        <a class="dropdown-item" href="admin-thong-tin.html"><i class="fas fa-address-book mr-2"></i> Thông tin</a>
+                        <a class="dropdown-item" href="admin-gio-hang.html"><i class="fas fa-shopping-cart mr-2"></i> Giỏ hàng</a>
+                        <a class="dropdown-item" href="login.html"> <i class="fas fa-sign-out-alt mr-2"></i> Đăng xuất</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li> <a href="admin-tong-quan.html"><i class="fas fa-tachometer-alt"></i> <span>Tổng quan</span></a> </li>
+                        <li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Báo cáo </span> <span class="menu-arrow"></span></a>
+                            <ul class="submenu_class" style="display: none;">
+                                <li><a href="bao-cao-tong.html">Báo cáo tổng  </a></li>
+                                <li><a href="admin-bao-cao-thanh-vien.html"> Báo cáo thành viên</a></li>
+                                <li><a href="admin-bao-cao-thong-ke-thanh-vien.html"> Báo cáo thống kê thành viên </a></li>
+                                <li><a href="admin-bao-cao-chi-tieu-và-loi-nhuan.html">Báo cáo chi tiêu và lợi nhuận</a></li>
+                                <li><a href="admin-bao-cao-san-pham-va-ton-kho.html">Báo cáo Sản phẩm và hàng tồn kho</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="admin-thong-tin.html"><i class="fas fa-address-book"></i>
+                            <span>Thông tin</span></a>
+                        </li>
+                        <li>
+                            <a href="admin-danh-muc-san-pham.html"> <i class="fas fa-file-alt"></i><span>Danh mục sản phẩm</span></a>
+                        </li>
+                        <li>
+                            <a href="admin-gio-hang.html"> <i class="fas fa-shopping-cart"></i><span>Giỏ hàng </span></a>
+                        </li>
+                        <li class="active">
+                            <a href="admin-don-hang.html"> <i class="fas fa-cart-plus"></i><span>Đơn hàng</span></a>
+                        </li>
+                        <li> <a href="admin-danh-sach-thanh-vien.html"><i class="nav-icon fas fa-table"></i> <span>Danh sách thành viên </span></a> </li>
+                        <li> <a href="admin-rut-tien.html"><i class="fas fa-dollar-sign"></i> <span>Rút tiền </span></a> </li>
+                        <li>
+                            <a href="admin-chuyen-tien.html"> <i class="fas fa-search-dollar"></i><span> Chuyển tiền </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-lich-su-thu-nhap.html"> <i class="fas fa-money-check-alt "></i> <span>Lịch sử thu nhập </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-phan-thuong.html"> <i class="fas fa-gift"></i><span>Phần thưởng </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-thay-doi-mat-khau.html"> <i class="fas fa-lock-open"></i><span>Thay đổi mật khẩu </span></a>
+                        </li>
+
+                        <li class="list-divider"></li>
+                        <li class="menu-title mt-3"> <span>TỔNG QUAN VỀ CÔNG TY</span> </li>
+                        <li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Thông tin chung </span> <span class="menu-arrow"></span></a>
+                            <ul class="submenu_class" style="display: none;">
+                                <li><a href="admin-gioi-thieu-cong-ty.html">Giới thiệu về công ty  </a></li>
+                                <li><a href="admin-nha-may-san-xuat.html"> Nhà máy sản xuất</a></li>
+                                <li><a href="admin-hoat-dong-thi-truong.html"> Hoạt động thị trường </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="admin-su-kien.html"> <i class="fas fa-calendar-alt"></i><span>Sự kiện & khuyến mãi </span></a>
+                        </li>
+                        <li> <a href="trang-chu.html"><i class="far fa-window-maximize"></i><span>Thăm website</span></a> </li>
+                        <li>
+                            <a href="https://www.facebook.com/hangtieudungcongnghesinhhocbio/?locale=vi_VN">
+                                <i class="nav-icon fab fa-facebook pe-2"></i><span>Fanpage</span></a>
+                        </li>
+                        <li class="menu-title pb-5">
+                            <div>Điện thoại: 0948142268</div>
+                            <div>Gmail: hoanganhbio.hotro@ gmail.com </div>
+                            <div>Điện thoại zalo: 0945537567</div>
+                        </li>
+                        <li class="list-divider"></li>
+                        <li>
+                            <a href="login.html"> <i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content container-fluid general-report-container">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item">Tổng quan</li>
+                                <li class="breadcrumb-item">Báo cáo</li>
+                                <li class="breadcrumb-item active">Báo cáo doanh thu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-filter">
+                    <div>
+                        <label class="mr-2">Khung thời gian:</label>
+                        <select class="mr-2" id="statusFilter">
+                            <option value="">Hôm nay</option>
+                            <option value="">Hôm qua</option>
+                            <option value="">Trong 7 ngày qua</option>
+                            <option value="">Trong 30 ngày qua</option>
+                            <hr>
+                            <option value="">Theo ngày</option>
+                            <option value="">Theo tuần</option>
+                            <option value="">Theo tháng</option>
+                            <option value="">Theo năm</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3>112</h3>
+                                    <span>Doanh thu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3>44</h3>
+                                    <span>Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3>37</h3>
+                                    <span>Tasks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-user"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3>218</h3>
+                                    <span>Employees</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 ">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Total Revenue</h3>
+                                        <div id="bar-charts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Sales Overview</h3>
+                                        <div id="line-charts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card-group m-b-30">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div>
+                                            <span class="d-block">New Employees</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success">+10%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb-3">10</h3>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mb-0">Overall Employees 218</p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div>
+                                            <span class="d-block">Earnings</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success">+12.5%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb-3">$1,42,300</h3>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mb-0">Previous Month <span class="text-muted">$1,15,852</span></p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div>
+                                            <span class="d-block">Expenses</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-danger">-2.8%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb-3">$8,500</h3>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mb-0">Previous Month <span class="text-muted">$7,500</span></p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div>
+                                            <span class="d-block">Profit</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-danger">-75%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb-3">$1,12,000</h3>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mb-0">Previous Month <span class="text-muted">$1,42,000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Widget -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-4 d-flex">
+                        <div class="card flex-fill dash-statistics">
+                            <div class="card-body">
+                                <h5 class="card-title">Statistics</h5>
+                                <div class="stats-list">
+                                    <div class="stats-info">
+                                        <p>Today Leave <strong>4 <small>/ 65</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>Pending Invoice <strong>15 <small>/ 92</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>Completed Projects <strong>85 <small>/ 112</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>Open Tickets <strong>190 <small>/ 212</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>Closed Tickets <strong>22 <small>/ 212</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body">
+                                <h4 class="card-title">Task Statistics</h4>
+                                <div class="statistics">
+                                    <div class="row">
+                                        <div class="col-md-6 col-6 text-center">
+                                            <div class="stats-box mb-4">
+                                                <p>Total Tasks</p>
+                                                <h3>385</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-6 text-center">
+                                            <div class="stats-box mb-4">
+                                                <p>Overdue Tasks</p>
+                                                <h3>19</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-purple" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 22%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">22%</div>
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 24%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">24%</div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 26%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">21%</div>
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">10%</div>
+                                </div>
+                                <div>
+                                    <p><i class="fa fa-dot-circle-o text-purple mr-2"></i>Completed Tasks <span class="float-right">166</span></p>
+                                    <p><i class="fa fa-dot-circle-o text-warning mr-2"></i>Inprogress Tasks <span class="float-right">115</span></p>
+                                    <p><i class="fa fa-dot-circle-o text-success mr-2"></i>On Hold Tasks <span class="float-right">31</span></p>
+                                    <p><i class="fa fa-dot-circle-o text-danger mr-2"></i>Pending Tasks <span class="float-right">47</span></p>
+                                    <p class="mb-0"><i class="fa fa-dot-circle-o text-info mr-2"></i>Review Tasks <span class="float-right">5</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body">
+                                <h4 class="card-title">Today Absent <span class="badge bg-inverse-danger ml-2">5</span></h4>
+                                <div class="leave-info-box">
+                                    <div class="media align-items-center">
+                                        <a href="profile.html" class="avatar"><img alt="" src="/assets/img/user.jpg"></a>
+                                        <div class="media-body">
+                                            <div class="text-sm my-0">Martin Lewis</div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mt-3">
+                                        <div class="col-6">
+                                            <h6 class="mb-0">4 Sep 2019</h6>
+                                            <span class="text-sm text-muted">Leave Date</span>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <span class="badge bg-inverse-danger">Pending</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="leave-info-box">
+                                    <div class="media align-items-center">
+                                        <a href="profile.html" class="avatar"><img alt="" src="/assets/img/user.jpg"></a>
+                                        <div class="media-body">
+                                            <div class="text-sm my-0">Martin Lewis</div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mt-3">
+                                        <div class="col-6">
+                                            <h6 class="mb-0">4 Sep 2019</h6>
+                                            <span class="text-sm text-muted">Leave Date</span>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <span class="badge bg-inverse-success">Approved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="load-more text-center">
+                                    <a class="text-dark" href="javascript:void(0);">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Statistics Widget -->
+
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="card card-table flex-fill">
+                            <div class="card-header">
+                                <h3 class="card-title mb-0">Invoices</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap custom-table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Invoice ID</th>
+                                                <th>Client</th>
+                                                <th>Due Date</th>
+                                                <th>Total</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="invoice-view.html">#INV-0001</a></td>
+                                                <td>
+                                                    <h2><a href="#">Global Technologies</a></h2>
+                                                </td>
+                                                <td>11 Mar 2019</td>
+                                                <td>$380</td>
+                                                <td>
+                                                    <span class="badge bg-inverse-warning">Partially Paid</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="invoice-view.html">#INV-0002</a></td>
+                                                <td>
+                                                    <h2><a href="#">Delta Infotech</a></h2>
+                                                </td>
+                                                <td>8 Feb 2019</td>
+                                                <td>$500</td>
+                                                <td>
+                                                    <span class="badge bg-inverse-success">Paid</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="invoice-view.html">#INV-0003</a></td>
+                                                <td>
+                                                    <h2><a href="#">Cream Inc</a></h2>
+                                                </td>
+                                                <td>23 Jan 2019</td>
+                                                <td>$60</td>
+                                                <td>
+                                                    <span class="badge bg-inverse-danger">Unpaid</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="invoices.html">View all invoices</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="card card-table flex-fill">
+                            <div class="card-header">
+                                <h3 class="card-title mb-0">Payments</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table custom-table table-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Invoice ID</th>
+                                                <th>Client</th>
+                                                <th>Payment Type</th>
+                                                <th>Paid Date</th>
+                                                <th>Paid Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="invoice-view.html">#INV-0001</a></td>
+                                                <td>
+                                                    <h2><a href="#">Global Technologies</a></h2>
+                                                </td>
+                                                <td>Paypal</td>
+                                                <td>11 Mar 2019</td>
+                                                <td>$380</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="invoice-view.html">#INV-0002</a></td>
+                                                <td>
+                                                    <h2><a href="#">Delta Infotech</a></h2>
+                                                </td>
+                                                <td>Paypal</td>
+                                                <td>8 Feb 2019</td>
+                                                <td>$500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="invoice-view.html">#INV-0003</a></td>
+                                                <td>
+                                                    <h2><a href="#">Cream Inc</a></h2>
+                                                </td>
+                                                <td>Paypal</td>
+                                                <td>23 Jan 2019</td>
+                                                <td>$60</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="payments.html">View all payments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 d-flex">
+                        <div class="card card-table flex-fill">
+                            <div class="card-header">
+                                <h3 class="card-title mb-0">Clients</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table custom-table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Status</th>
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="#" class="avatar"><img alt="" src="/assets/img/profiles/avatar-19.jpg"></a>
+                                                        <a href="client-profile.html">Barry Cuda <span>CEO</span></a>
+                                                    </h2>
+                                                </td>
+                                                <td>barrycuda@example.com</td>
+                                                <td>
+                                                    <div class="dropdown action-label">
+                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa fa-dot-circle-o text-success"></i> Active
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="#" class="avatar"><img alt="" src="/assets/img/profiles/avatar-19.jpg"></a>
+                                                        <a href="client-profile.html">Tressa Wexler <span>Manager</span></a>
+                                                    </h2>
+                                                </td>
+                                                <td>tressawexler@example.com</td>
+                                                <td>
+                                                    <div class="dropdown action-label">
+                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa fa-dot-circle-o text-danger"></i> Inactive
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="client-profile.html" class="avatar"><img alt="" src="/assets/img/profiles/avatar-07.jpg"></a>
+                                                        <a href="client-profile.html">Ruby Bartlett <span>CEO</span></a>
+                                                    </h2>
+                                                </td>
+                                                <td>rubybartlett@example.com</td>
+                                                <td>
+                                                    <div class="dropdown action-label">
+                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa fa-dot-circle-o text-danger"></i> Inactive
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="client-profile.html" class="avatar"><img alt="" src="/assets/img/profiles/avatar-06.jpg"></a>
+                                                        <a href="client-profile.html"> Misty Tison <span>CEO</span></a>
+                                                    </h2>
+                                                </td>
+                                                <td>mistytison@example.com</td>
+                                                <td>
+                                                    <div class="dropdown action-label">
+                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa fa-dot-circle-o text-success"></i> Active
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="client-profile.html" class="avatar"><img alt="" src="/assets/img/profiles/avatar-14.jpg"></a>
+                                                        <a href="client-profile.html"> Daniel Deacon <span>CEO</span></a>
+                                                    </h2>
+                                                </td>
+                                                <td>danieldeacon@example.com</td>
+                                                <td>
+                                                    <div class="dropdown action-label">
+                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa fa-dot-circle-o text-danger"></i> Inactive
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="clients.html">View all clients</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="card card-table flex-fill">
+                            <div class="card-header">
+                                <h3 class="card-title mb-0">Recent Projects</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table custom-table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Project Name </th>
+                                                <th>Progress</th>
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h2><a href="project-view.html">Office Management</a></h2>
+                                                    <small class="block text-ellipsis">
+                                                        <span>1</span> <span class="text-muted">open tasks, </span>
+                                                        <span>9</span> <span class="text-muted">tasks completed</span>
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped">
+                                                        <div class="progress-bar" role="progressbar" data-toggle="tooltip" title="65%" style="width: 65%"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2><a href="project-view.html">Project Management</a></h2>
+                                                    <small class="block text-ellipsis">
+                                                        <span>2</span> <span class="text-muted">open tasks, </span>
+                                                        <span>5</span> <span class="text-muted">tasks completed</span>
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped">
+                                                        <div class="progress-bar" role="progressbar" data-toggle="tooltip" title="15%" style="width: 15%"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2><a href="project-view.html">Video Calling App</a></h2>
+                                                    <small class="block text-ellipsis">
+                                                        <span>3</span> <span class="text-muted">open tasks, </span>
+                                                        <span>3</span> <span class="text-muted">tasks completed</span>
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped">
+                                                        <div class="progress-bar" role="progressbar" data-toggle="tooltip" title="49%" style="width: 49%"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2><a href="project-view.html">Hospital Administration</a></h2>
+                                                    <small class="block text-ellipsis">
+                                                        <span>12</span> <span class="text-muted">open tasks, </span>
+                                                        <span>4</span> <span class="text-muted">tasks completed</span>
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped">
+                                                        <div class="progress-bar" role="progressbar" data-toggle="tooltip" title="88%" style="width: 88%"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h2><a href="project-view.html">Digital Marketplace</a></h2>
+                                                    <small class="block text-ellipsis">
+                                                        <span>7</span> <span class="text-muted">open tasks, </span>
+                                                        <span>14</span> <span class="text-muted">tasks completed</span>
+                                                    </small>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped">
+                                                        <div class="progress-bar" role="progressbar" data-toggle="tooltip" title="100%" style="width: 100%"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="dropdown dropdown-action">
+                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="projects.html">View all projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/assets/plugins/raphael/raphael.min.js"></script>
+    <script src="/assets/plugins/morris/morris.min.js"></script>
+    <script src="/assets/js/chart.morris.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/chart.js"></script>
+</body>
+
+</html>

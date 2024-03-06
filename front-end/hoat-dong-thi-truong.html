@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nhà máy sản xuất</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/mystyle.css">
+    <script src="/assets/js/myScript.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hedvig Letters Sans">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <!-- header nav -->
+    <header class="bg-white fixed-top" id="header">
+        <div class="bg-light d-none d-md-block">
+            <div class="container header-top text-secondary p-2 d-flex flex-column flex-md-row justify-content-between text-center align-items-center">
+                <div>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>  hoanganhbio.hotro@ gmail.com </span>
+                    <span>  |  </span>
+                    <span><i class="fas fa-phone"></i></span>
+                    <span> 0948142268</span>
+                </div>
+
+                <div class="header-login mt-2 mt-md-0">
+                    <span>
+                    <i class="fas fa-lock"></i>
+                    <a href="login.html">ĐĂNG NHẬP</a>
+                </span>
+                    <span> | </span>
+                    <span> 
+                    <i class="fas fa-phone"></i>
+                    <a href="ho-tro.html">HỖ TRỢ</a>
+                </span>
+                </div>
+
+            </div>
+        </div>
+        <!-- header-2 -->
+        <div class="header-nav">
+            <div class="container header-2  header-nav-sub py-2">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <div class="d-block d-lg-none nav-side-container">
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav">
+                        <span><i class="fas fa-list"></i></span>
+                      </button>
+                        <div class="offcanvas offcanvas-start" id="sideNav">
+                            <div class="offcanvas-header d-flex">
+                                <h1 class="offcanvas-title"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="input-group mb-3 px-3">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-blue" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="offcanvas-body">
+
+                                <div class="menu-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></div>
+                                <!-- menu sản phẩm -->
+                                <div class="menu-item " data-category="Item 2" onclick="showSubcategories('SanPham')">
+                                    <div class="d-flex justify-content-between align-items-center nav-link">
+                                        <a href="#">SẢN PHẨM</a>
+                                        <span class="float-end"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                                <div class="subcategory-list" id="subcategoriesSanPham">
+                                    <div class="back-btn nav-link" onclick="showMainMenu()" style="padding-left: 0;">
+                                        <i class="fas fa-caret-left"></i> &nbsp;SẢN PHẨM
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('nuoc lau san')">
+                                        <a class="nav-link" href="san-pham.html">NƯỚC LAU SÀN</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('nuoc giat xa')">
+                                        <a class="nav-link" href="san-pham.html">NƯỚC GIẶT XẢ </a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('nuoc rua chen')">
+                                        <a class="nav-link" href="san-pham.html">NƯỚC RỬA CHÉN </a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('san pham khac')">
+                                        <a class="nav-link" href="san-pham.html">SẢN PHẨM KHÁC </a>
+                                    </div>
+
+                                </div>
+                                <!-- menu Giới thiệu -->
+                                <div class="menu-item " data-category="Item 2" onclick="showSubcategories('GioiThieu')">
+                                    <div class="d-flex justify-content-between align-items-center nav-link">
+                                        <a href="#">GIỚI THIỆU</a>
+                                        <span class="float-end"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                                <div class="subcategory-list" id="subcategoriesGioiThieu">
+                                    <div class="back-btn nav-link" onclick="showMainMenu()" style="padding-left: 0;">
+                                        <i class="fas fa-caret-left"></i> &nbsp;GIỚI THIỆU
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('gioi thieu 1')">
+                                        <a class="nav-link" href="gioi-thieu-cong-ty.html">GIỚI THIỆU VỀ CÔNG TY</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('gioi thieu 2')">
+                                        <a class="nav-link" href="nha-may-san-xuat.html">NHÀ MÁY SẢN XUẤT</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('gioi thieu 3')">
+                                        <a class="nav-link" href="hoat-dong-thi-truong.html">HOẠT ĐỘNG THỊ TRƯỜNG</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item"><a class="nav-link" href="san-pham-khuyen-mai.html">SẢN PHẨM KHUYẾN MÃI</a></div>
+                                <div class="menu-item">
+                                    <a class="nav-link" href="co-hoi-kinh-doanh.html">ĐỐI TÁC KINH DOANH</a>
+                                </div>
+                                <!-- menu tin tức và sự kiện -->
+                                <div class="menu-item " data-category="Item 3" onclick="showSubcategories('TinTuc')">
+                                    <div class="d-flex justify-content-between align-items-center nav-link">
+                                        <a href="#">TIN TỨC VÀ SỰ KIỆN</a>
+                                        <span class="float-end"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                                <div class="subcategory-list" id="subcategoriesTinTuc">
+                                    <div class="back-btn nav-link" onclick="showMainMenu()" style="padding-left: 0;">
+                                        <i class="fas fa-caret-left"></i> &nbsp;TIN TỨC VÀ SỰ KIỆN
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('doi song')">
+                                        <a class="nav-link" href="tin-tuc.html">ĐỜI SỐNG</a>
+                                    </div>
+                                    <div class="subcategory-item" onclick="showSubcategories('su kien')">
+                                        <a class="nav-link" href="tin-tuc.html">SỰ KIỆN</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item"><a class="nav-link" href="lien-he.html">LIÊN HỆ</a></div>
+                                <div class="menu-item"><a class="nav-link" href="ho-tro.html">HỖ TRỢ</a></div> <br>
+                                <div class="menu-item">
+                                    <div class="login-register d-flex justify-content-between" style="border-bottom: none; padding: 0;">
+                                        <a href="login.html" class="btn border ">Đăng nhập</a> <br>
+                                        <a href="register.html" class="btn border">Đăng ký</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center ms-2">
+                        <div class="me-2"><img src="/assets/images/logo.png" style="width: 40px;" alt="logo"></div>
+                        <div><a class="brand-name" href="index.html">HOÀNG ANH BIO</a></div>
+                    </div>
+                    <div class="input-group my-3 px-3 w-50 d-none d-lg-flex">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-container">
+                        <div class="shopping-cart">
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartSide">
+                                <i class="fas fa-shopping-bag px-2"></i>
+                                <span class="quantity">0</span>
+                            </a>
+                        </div>
+
+                        <div class="offcanvas offcanvas-end" id="cartSide">
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-title">Giỏ hàng</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="shopping-cart-side">
+                                    <ul class="list-shopping-cart-side">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- desktop header -->
+            <div class="desktop-header d-none d-lg-block">
+
+                <!-- header - 3 -->
+                <div class="bg-success header-3">
+                    <div class="main-nav container p-3 d-none d-lg-flex justify-content-around text-center">
+                        <div><a href="index.html">TRANG CHỦ</a></div>
+                        <div class="dropdown">
+                            <a href="#" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                          GIỚI THIỆU
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gioi-thieu-cong-ty.html">GIỚI THIỆU VỀ CÔNG TY</a></li>
+                                <li><a class="dropdown-item" href="nha-may-san-xuat.html">NHÀ MÁY SẢN XUẤT</a></li>
+                                <li><a class="dropdown-item" href="hoat-dong-thi-truong.html">HOẠT ĐỘNG THỊ TRƯỜNG</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" onclick="openProductList()" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                          SẢN PHẨM
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="san-pham.html">NƯỚC LAU SÀN</a></li>
+                                <li><a class="dropdown-item" href="san-pham.html">NƯỚC GIẶT XẢ</a></li>
+                                <li><a class="dropdown-item" href="san-pham.html">NƯỚC RỬA CHÉN</a></li>
+                                <li><a class="dropdown-item" href="san-pham.html">SẢN PHẨM KHÁC</a></li>
+                            </ul>
+                        </div>
+                        <div><a href="san-pham-khuyen-mai.html">SẢN PHẨM KHUYẾN MÃI</a></div>
+                        <div>
+                            <a href="co-hoi-kinh-doanh.html">
+                          ĐỐI TÁC KINH DOANH
+                        </a>
+                        </div>
+                        <div class="dropdown">
+                            <a href="tin-tuc.html" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                          TIN TỨC & SỰ KIỆN
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tin-tuc.html">BÀI VIẾT CHUYÊN MỤC</a></li>
+                                <li><a class="dropdown-item" href="tin-tuc.html">SỰ KIỆN</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="lien-he.html">LIÊN HỆ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- fake div -->
+    <div class="fake-header"></div>
+
+
+
+    <!-- body -->
+    <div class="mt-6 container pb-5 ">
+        <div class="company-introduction  text-center">
+            <div class=" p-2">
+                <div class="h1-text">NHÀ MÁY SẢN XUẤT</div>
+                <div class="hr-title text-center">
+                    <hr>
+                </div>
+                <p> Toàn bộ hệ thống nhà máy của công ty được thiết kế theo tiêu chuẩn quốc tế, định hướng công nghệ cao, xanh sạch, thân thiện với môi trường và đạt chuẩn quốc gia. Các dây chuyền sản xuất tiên tiến và hiện đại được đầu tư đồng bộ, khép kín.
+                    Với năng lực kinh nghiệm, uy tín đã được khẳng định, chúng tôi tự hào luôn mang đến cho khách hàng những sản phẩm công nghệ cao kết hợp giữa tinh hoa thảo dược từ thiên nhiên và công nghệ khoa học hiện đại, gắn lợi ích của doanh nghệp
+                    với sức khỏe, chất lượng cuộc sống của cộng đồng cùng sự phát triển của xã hội... Với phương châm: “ Kiến Tạo Cuộc Sống Xanh - Sạch - An Toàn Không Hóa Chất” lấy giá trị: “Đón Nhận Thử Thách - Trung Thực - Chính Trực” làm cốt lỏi để
+                    xây dựng thường hiệu: “Người Việt dùng hàng Việt chất lượng châu âu” hàng đầu tại Việt Nam và trên thế giới./ </p>
+                <p><img src="/assets/images/nha-may.PNG" alt="" class="img-nha-may"></p>
+                <p>HOÀNG ANH BIO luôn cung cấp cho khách hàng những sản phẩm, dịch vụ có chất lượng phù hợp với các yêu cầu chính đáng và đã thỏa thuận với phương châm: chính xác - trung thực - kịp thời. Mỗi thành viên trong công ty chúng tôi cam kết thực
+                    hiện chính sách chất lượng trong công việc,đảm bảo toàn bộ quy trình sẽ thực hiện nghiêm túc</p>
+                <div class="h1-text mt-5">HỆ THỐNG QUẢN LÝ CHẤT LƯỢNG</div>
+                <div class="hr-title text-center">
+                    <hr>
+                </div>
+                <p>Chúng tôi tự hào được cấp chứng nhận HACCP theo tiêu chuẩn Codex Alimentarius, một hệ thống quản lý an toàn thực phẩm quốc tế. HACCP (Hazard Analysis and Critical Control Points) giúp chúng tôi định rõ và kiểm soát mọi rủi ro liên quan
+                    đến an toàn thực phẩm trong quá trình sản xuất. Điều này đảm bảo rằng sản phẩm của chúng tôi đáp ứng những tiêu chuẩn cao nhất về an toàn và chất lượng thực phẩm.</p>
+                <p><img src="/assets/images/nha-may-2.PNG" alt="" class="img-nha-may"></p>
+                <p>Chúng tôi cũng hân hạnh thông báo về việc đạt được chứng nhận theo tiêu chuẩn ISO 13485:2016, một tiêu chuẩn quốc tế cho hệ thống quản lý chất lượng trong sản xuất thiết bị y tế. Điều này chứng minh cam kết của chúng tôi đối với việc sản
+                    xuất các sản phẩm y tế chất lượng cao, đảm bảo an toàn và hiệu quả trong các ứng dụng y tế.</p>
+                <p><img src="/assets/images/nha-may-3.PNG" alt="" class="img-nha-may"></p>
+                <p>
+                    Với bề dày kinh nghiệm của đội ngũ cán bộ công nhân viên đến từ trong và ngoài nước. Công ty chúng tôi đã từng bước nâng cao và khẳng định năng lực cạnh tranh cũng như vị thế trên thị trường hàng tiêu dùng sinh học, sản phẩm thực phẩm “nói không với hóa
+                    chất” bảo vệ sức khỏe cộng đồng người tiêu dùng tại Việt Nam.
+                </p>
+                <p><img src="/assets/images/nha-may-4.PNG" alt="" class="img-nha-may"></p>
+                <div class="h1-text mt-5">QUY TRÌNH SẢN XUẤT</div>
+                <div class="hr-title text-center">
+                    <hr>
+                </div>
+                <p>Quy trình sản xuất khép kín các sản phẩm của chúng tôi đặt nền tảng chất lượng và hiệu suất cao, đồng thời tuân thủ nghiêm ngặt các tiêu chuẩn an toàn và môi trường</p>
+                <p><img src="/assets/images/nha-may-5.PNG" alt="" class="img-nha-may"></p>
+                <p>Chúng tôi chọn lựa nguồn nguyên liệu chất lượng cao để đảm bảo rằng sản phẩm cuối cùng sẽ đáp ứng hoặc vượt qua các tiêu chuẩn chất lượng. Các thành phần như chất tạo bọt, chất tẩy, và chất khử trùng được lựa chọn cẩn thận để đảm bảo hiệu
+                    quả và an toàn sử dụng.</p>
+                <p><img src="/assets/images/nha-may-6.PNG" alt="" class="img-nha-may"></p>
+                <p>Chúng tôi áp dụng các tiêu chuẩn an toàn nghiêm ngặt trong quá trình sản xuất, từ việc xử lý nguyên liệu đến giai đoạn đóng gói. Các nhân viên được đào tạo chuyên sâu về an toàn lao động và quy trình sản xuất để đảm bảo môi trường làm
+                    việc an toàn và hiệu quả.</p>
+                <p><img src="/assets/images/nha-may-7.jpg" alt="" class="img-nha-may"></p>
+                <p>Sản phẩm sau khi được kiểm tra và chứng nhận chất lượng sẽ được đóng gói một cách chuyên nghiệp để đảm bảo an toàn vận chuyển và bảo quản.</p>
+                <p><b>Chúng tôi cam kết đưa đến tay khách hàng những sản phẩm vệ sinh chất lượng cao, không chỉ đáp ứng nhu cầu hàng ngày mà còn đảm bảo an toàn cho sức khỏe và môi trường!</b></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer bg-light pt-4">
+        <div class="container row mx-auto ">
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>THÔNG TIN CÔNG TY</b><br>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-center my-2">
+                        <div class="me-2"><img src="/assets/images/logo.png" style="width: 40px;" alt="logo"></div>
+                        <div><a class="brand-name-footer" href="index.html">HOÀNG ANH BIO</a></div>
+                    </div>
+                    Địa chỉ: 163/1C Đường số 11, Lê Hồng phong, Nha Trang, Vietnam <br> Hotline: 0972214020 <br> Email: hoanganhbio@gmail.com
+                    <div class="footer-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i> </a>
+                        <a href="#"><i class="fab fa-instagram"></i> </a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>THÔNG TIN CHUNG</b> <br>
+                    <hr>
+                    <a href="#">Giới thiệu</a> <br>
+                    <a href="#">Liên hệ</a> <br>
+                    <a href="#">Tuyển dụng</a> <br>
+                    <a href="#">Điều khoản sử dụng</a> <br>
+                    <a href="#">Chính sách bảo mật</a> <br>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>CHÍNH SÁCH BÁN HÀNG</b> <br>
+                    <hr>
+                    <a href="#"> Chính sách giao nhận</a> <br>
+                    <a href="#"> Phương thức thanh toán</a> <br>
+                    <a href="#"> Chính sách đổi trả hàng</a> <br>
+                    <a href="#"> Quy trình xử lý khiếu nại</a> <br>
+                    <a href="#"> Chính sách bảo hành</a> <br>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-4">
+                <p>
+                    <b>FANPAGE FACEBOOK</b> <br>
+                    <hr>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhangtieudungcongnghesinhhocbio&tabs=timeline&height=250px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300px"
+                        height="250px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="width:100%"></iframe>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center text-secondary">
+            Copyright © 2020 hoanganhbio.com All Rights Reserved. Powered by Multimediaviet .
+        </div>
+    </div>
+
+</body>
+
+</html>

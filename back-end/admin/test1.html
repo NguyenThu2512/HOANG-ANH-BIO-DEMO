@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <title>Date Range Picker</title>
+    <style>
+        .datepicker-dropdown {
+            z-index: 1600 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="input-group date" id="dateRangePicker">
+            <input type="text" class="form-control" readonly>
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#dateRangePicker').datepicker({
+                format: 'dd/mm/yyyy',
+                todayHighlight: true,
+                autoclose: true,
+                orientation: 'bottom',
+                templates: {
+                    leftArrow: '<i class="fas fa-angle-left"></i>',
+                    rightArrow: '<i class="fas fa-angle-right"></i>'
+                }
+            });
+
+            // Set default date range to "Last 7 Days"
+            var endDate = new Date();
+            var startDate = new Date();
+            startDate.setDate(endDate.getDate() - 6);
+
+            $('#dateRangePicker').datepicker('setDates', [startDate, endDate]);
+
+            // Add event listener to handle predefined date ranges
+            $('#dateRangePicker').on('changeDate', function(e) {
+                var selectedDate = e.date;
+                var today = new Date();
+                var yesterday = new Date(today);
+                yesterday.setDate(today.getDate() - 1);
+
+                if (selectedDate.toDateString() === today.toDateString()) {
+                    // Today
+                    console.log("Selected date range: Today");
+                } else if (selectedDate.toDateString() === yesterday.toDateString()) {
+                    // Yesterday
+                    console.log("Selected date range: Yesterday");
+                } else if (selectedDate >= yesterday && selectedDate <= today) {
+                    // Last 7 Days
+                    console.log("Selected date range: Last 7 Days");
+                } else if (selectedDate >= new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000) && selectedDate <= today) {
+                    // Last 30 Days
+                    console.log("Selected date range: Last 30 Days");
+                } else if (selectedDate.getFullYear() === today.getFullYear()) {
+                    // By Month
+                    console.log("Selected date range: By Month");
+                } else {
+                    // By Year
+                    console.log("Selected date range: By Year");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Admin-thông tin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/feathericon.min.css">
+    <link rel="stylehseet" href="https://cdn.oesmith.co.uk/morris-0.5.1.css">
+    <link rel="stylesheet" href="/assets/plugins/morris/morris.css">
+    <link rel="stylesheet" href="/assets/css/style.css"> </head>
+<link rel="stylesheet" href="/assets/css/adminstyle.css">
+<script src="/assets/js/adminScript.js"></script>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html" class="logo"> <img src="/assets/images/logo.png" width="40" height="60" alt="logo"> <span class="logoclass">HOÀNG ANH BIO</span> </a>
+                <a href="index.html" class="logo logo-small"> <img src="/assets/images/logo.png" alt="Logo"> <span class="logoclass">HOÀNG ANH BIO</span></a>
+            </div>
+            <a href="javascript:void(0);" id="toggle_btn"> <i class="fe fe-text-align-left"></i> </a>
+            <a class="mobile_btn" id="mobile_btn"> <i class="fas fa-bars"></i> </a>
+            <ul class="nav user-menu">
+                <li class="nav-item dropdown noti-dropdown d-none d-md-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <i class="fe fe-bell"></i> <span class="badge badge-pill">3</span> </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header"> <span class="notification-title">Thông báo</span> <a href="javascript:void(0)" class="clear-noti"> Clear All </a> </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media"> <span class="avatar avatar-sm">
+											<img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+											</span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer"> <a href="#">View all Notifications</a> </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" style="padding: 0;" data-toggle="dropdown"> <span class="user-img"><img class="rounded-circle" src="/assets/images/user.jpg" width="45px" alt=""></span> </a>
+                    <div class="dropdown-menu">
+                        <div class="user-header">
+                            <div class="avatar avatar-sm"> <img src="/assets/images/user.jpg" alt="User Image" class="avatar-img rounded-circle"> </div>
+                            <div class="user-text">
+                                <h6>Thu Huyền</h6>
+                                <p class="text-muted mb-0">Giám đốc kinh doanh</p>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="index.html"><i class="fas fa-tachometer-alt mr-2"></i> Tổng quan</a>
+                        <a href="#" class="dropdown-item dropdown-toggle d-block d-md-none" data-toggle="dropdown"> <i class="fas fa-bell mr-2"></i> Thông báo </a>
+                        <div class="dropdown-menu notifications">
+                            <div class="topnav-dropdown-header"> <span class="notification-title">Thông báo</span> <a href="javascript:void(0)" class="clear-noti"> Clear All </a> </div>
+                            <div class="noti-content">
+                                <ul class="notification-list">
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="#">
+                                            <div class="media"> <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image" src="/assets//images/nha-may-4.PNG">
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="noti-details"><span class="noti-title">Bạn vừa hoàn thành chỉ tiêu năng động trong tháng</span></p>
+                                                    <p class="noti-time"><span class="notification-time">4 mins ago</span> </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="topnav-dropdown-footer"> <a href="#">View all Notifications</a> </div>
+                        </div>
+                        <a class="dropdown-item" href="admin-thong-tin.html"><i class="fas fa-address-book mr-2"></i> Thông tin</a>
+                        <a class="dropdown-item" href="admin-gio-hang.html"><i class="fas fa-shopping-cart mr-2"></i> Giỏ hàng</a>
+                        <a class="dropdown-item" href="login.html"> <i class="fas fa-sign-out-alt mr-2"></i> Đăng xuất</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li> <a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Tổng quan</span></a> </li>
+                        <li> <a href="admin-thong-tin.html"><i class="fas fa-address-book"></i>
+                            <span>Thông tin</span></a>
+                        </li>
+                        <li>
+                            <a href="admin-danh-muc-san-pham.html"> <i class="fas fa-file-alt"></i><span>Danh mục sản phẩm</span></a>
+                        </li>
+                        <li>
+                            <a href="admin-gio-hang.html"> <i class="fas fa-shopping-cart"></i><span>Giỏ hàng </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-don-hang.html"> <i class="fas fa-cart-plus"></i><span>Đơn hàng</span></a>
+                        </li>
+                        <li> <a href="admin-danh-sach-thanh-vien.html"><i class="nav-icon fas fa-table"></i> <span>Danh sách thành viên </span></a> </li>
+                        <li> <a href="admin-rut-tien.html"><i class="fas fa-dollar-sign"></i> <span>Rút tiền </span></a> </li>
+                        <li>
+                            <a href="admin-chuyen-tien.html"> <i class="fas fa-search-dollar"></i><span> Chuyển tiền </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-lich-su-thu-nhap.html"> <i class="fas fa-money-check-alt "></i> <span>Lịch sử thu nhập </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-phan-thuong.html"> <i class="fas fa-gift"></i><span>Phần thưởng </span></a>
+                        </li>
+                        <li>
+                            <a href="admin-thay-doi-mat-khau.html"> <i class="fas fa-lock-open"></i><span>Thay đổi mật khẩu </span></a>
+                        </li>
+
+                        <li class="list-divider"></li>
+                        <li class="menu-title mt-3"> <span>TỔNG QUAN VỀ CÔNG TY</span> </li>
+                        <li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Thông tin chung </span> <span class="menu-arrow"></span></a>
+                            <ul class="submenu_class" style="display: none;">
+                                <li class="active"><a href="admin-gioi-thieu-cong-ty.html">Giới thiệu về công ty  </a></li>
+                                <li><a href="admin-nha-may-san-xuat.html"> Nhà máy sản xuất</a></li>
+                                <li><a href="admin-hoat-dong-thi-truong.html"> Hoạt động thị trường </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="admin-su-kien.html"> <i class="fas fa-calendar-alt"></i><span>Sự kiện & khuyến mãi </span></a>
+                        </li>
+                        <li> <a href="/front-end/trang-chu.html"><i class="far fa-window-maximize"></i><span>Thăm website</span></a> </li>
+                        <li>
+                            <a href="https://www.facebook.com/hangtieudungcongnghesinhhocbio/?locale=vi_VN">
+                                <i class="nav-icon fab fa-facebook pe-2"></i><span>Fanpage</span></a>
+                        </li>
+                        <li class="menu-title pb-5">
+                            <div>Điện thoại: 0948142268</div>
+                            <div>Gmail: hoanganhbio.hotro@ gmail.com </div>
+                            <div>Điện thoại zalo: 0945537567</div>
+                        </li>
+                        <li class="list-divider"></li>
+                        <li>
+                            <a href="login.html"> <i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item active">Thay đổi mật khẩu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 company-introduction container pb-5 ">
+                    <div class="text-center">
+                        <div class=" p-2">
+                            <div class="h1-text">HOÀNG ANH BIO LÀ AI?</div>
+                            <div class="hr-title text-center">
+                                <hr>
+                            </div>
+                            <p> Công Ty Cổ Phần Thương Mại Hoàng Anh Bio là một trong những doanh nghiệp sản xuất và phân phối hàng tiêu dùng công nghệ sinh học hàng đầu tại Việt Nam, đã cho ra đời các dòng sản phẩm tẩy rửa sinh học cao cấp 100% nguyên liệu
+                                thảo dược từ thiên nhiên, thân thiện với môi trường, với quy trình, dây chuyền sản xuất nghiêm ngặt, công nghệ hiện đại bậc nhất đến từ Châu Âu và Hàn Quốc, đội ngủ công nhân được đào tạo bài bản chuyên nghiệp. Chúng tôi
+                                thực sự vui mừng và tự hào là sứ giả của cuộc sống xanh đang từng ngày lan tỏa giá trị đích thực và thiết yếu đến từng gia đình Việt. </p>
+                            <p><img src="/assets/images/about-us-1.PNG" alt="" class="w-75"></p>
+                            <p>
+                                Với bề dày kinh nghiệm của đội ngũ cán bộ công nhân viên đến từ trong và ngoài nước. Công ty chúng tôi đã từng bước nâng cao và khẳng định năng lực cạnh tranh cũng như vị thế trên thị trường hàng tiêu dùng sinh học, sản phẩm thực phẩm “nói không với hóa
+                                chất” bảo vệ sức khỏe cộng đồng người tiêu dùng tại Việt Nam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="company-mission my-4 mx-2">
+                        <div class="text-center">
+                            <div class="h1-text">SỨ MỆNH CỦA CHÚNG TÔI</div>
+                            <div class="hr-title text-center">
+                                <hr>
+                            </div>
+                            <p>Đem lại những giải pháp và dịch vụ chất lượng tốt nhất nhằm đáp ứng những sự kỳ vọng của Chủ đầu tư, khách hàng và đối tác kinh doanh. Tạo giá trị cộng đồng - Thương hiệu người Việt dùng hàngViệt.
+                            </p>
+                            <p>Liên tục cải tiến, xây dựng và phát triển công ty bền vững.</p>
+                            <p><img src="/assets/images/about-us-2.PNG" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="company-motto my-4 mx-2">
+                        <div class=" text-center">
+                            <div class="h1-text">PHƯƠNG CHÂM CỦA CHÚNG TÔI</div>
+                            <div class="hr-title text-center">
+                                <hr>
+                            </div>
+                            <p>Kiến Tạo Cuộc Sống Xanh - Sạch - An Toàn Không Hòa Chất Giá Trị Cộng Đồng - Thương Hiệu Người Việt Dùng Hàng Việt Đón Nhận Thử Thách - Trung Thực - Chính Trực
+                            </p>
+                            <p><img src="/assets/images/about-us-3.PNG" alt="" class="img-motto"></p>
+                        </div>
+                    </div>
+                    <div class="company-vision">
+                        <div class=" text-center">
+                            <div class="h1-text mb-4">TẦM NHÌN CỦA CHÚNG TÔI</div>
+                            <div class="hr-title text-center">
+                                <hr>
+                            </div>
+                            <p>Bằng nỗ lực lao động và sáng tạo, đội ngũ nhân viên tư vấn bán hàng, nhân viên sản xuất cùng với trang thiết bị máy móc hiện đại và sự áp dụng khoa học quản lý. HOÀNG ANH BIO quyết tâm trở thành một nhà cung cấp những sản phẩm
+                                tự nhiên 100% để kiến tạo cuộc sống xanh - sạch cho gia đình Việt.
+                            </p>
+                        </div>
+                        <div class="company-vision-btn"><a class="btn bg-success rounded p-3 text-white" href="login.html"><b>BẠN ĐÃ SẴN SÀNG CHƯA!</b></a></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/assets/plugins/raphael/raphael.min.js"></script>
+    <script src="/assets/plugins/morris/morris.min.js"></script>
+    <script src="/assets/js/chart.morris.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
